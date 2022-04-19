@@ -14,7 +14,7 @@ const saludo = () => {
 
 const capital = () => {
     do{
-montoCapital = parseInt(prompt("Ingrese el monto a simular\n Recuerde que debe ser mayor a $10000"));
+montoCapital = parseInt(prompt("Ingrese el monto a simular\n Recuerde que debe ser mayor o igual a $10000"));
     }while (montoCapital < 10000 || isNaN(montoCapital))
 }
 
@@ -28,12 +28,12 @@ const cuotas = () => {
 const resultado = () => {
     let total;
     if (montoCapital >= 10000 && montoCapital <= 250000){
-        total = alert("El monto a abonar es " + cantidadCuotas + " cuotas de " + ((montoCapital * 1.2)/cantidadCuotas ) + "\n Gracias")
+        total = alert("El monto a abonar es " + cantidadCuotas + " cuotas de " + ((montoCapital * 1.2)/cantidadCuotas ) + "\n Gracias!")
     }else if (montoCapital > 250000 && montoCapital <= 500000){
-        total = alert("El monto a abonar es " + cantidadCuotas + " cuotas de " + ((montoCapital * 2)/cantidadCuotas) + "\n Gracias")
+        total = alert("El monto a abonar es " + cantidadCuotas + " cuotas de " + ((montoCapital * 2)/cantidadCuotas) + "\n Gracias!")
     }else if(montoCapital > 500000)
     {
-        total = alert("El monto a abonar es " + cantidadCuotas + " cuotas de " + ((montoCapital * 2.5)/cantidadCuotas) + "\n Gracias") 
+        total = alert("El monto a abonar es " + cantidadCuotas + " cuotas de " + ((montoCapital * 2.5)/cantidadCuotas) + "\n Gracias!") 
     }
     else{
         alert("Ingrese un monto valido")
